@@ -1,5 +1,8 @@
 ### Data Science Project
 
-It covers basic and advanced features of Python and Data Science.
+It covers basic and advanced features of Python and Data Science. 
+Explained with the help of various projects step by step.
 
-for queries contact : raunakagarwal274@gmail.com
+
+
+For queries contact : raunakagarwal274@gmail.com
