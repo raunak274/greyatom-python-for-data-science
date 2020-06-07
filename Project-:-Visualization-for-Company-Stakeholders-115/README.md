@@ -32,10 +32,10 @@ Subplot operations
 Axes modifications
 
 
------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------
 
-Instructions :
-Step 1
+# Instructions :
+# Step 1
 
 Let's start with the simple task of visualizing the company's record with respect to loan approvals.
 
@@ -50,12 +50,13 @@ data.iloc[25,1] shoule be Male
 data.iloc[53,9] should be 360
 loan_status[0] should be 415
 loan_status[1] should be 185
-Step 2
+
+# Step 2
 
 Everyone needs money
 The company provides financial assistance across the different regions of the country. One interesting statistic that stakeholders want to see is the loan approval distribution across the regions.
 
-Instructions :
+# Instructions :
 Group the 'data' dataframe by Property_Area and Loan_Status and store it in a variable called 'property_and_loan'
 
 Use the .size() method on 'property_and_loan' and then use .unstack() and save it back to 'property_and_loan'
@@ -74,12 +75,13 @@ Things to ponder upon
 - Which is the region with the maximum difference between loan approvals and loan rejections?
 property_and_loan['N'][1] should be 51
 property_and_loan['Y'][0] should be 109
-Step 3
+
+# Step 3
 
 Expensive Education
 Higher education has always been an expensive endeavour for people but it results in better career opportunities and stability in life. But does higher education result in a better guarantee in issuing loans?
 
-Instructions :
+# Instructions :
 Group the 'data' dataframe by Education and Loan_Status and store it in a variable called 'education_and_loan'
 
 Use the .size() method on 'education_and_loan' and then use .unstack() and save it back to 'education_and_loan'
@@ -99,12 +101,13 @@ Things to ponder upon
   Do the above conclusions make sense? Why?
 education_and_loan['N'][1] should be 52
 education_and_loan['Y'][0] should be 333
-Step 4
+
+# Step 4
 
 Smarter and Richer?
 After seeing the loan status distribution, let's check whether being graduate or not also leads to different loan amount distribution by plotting an overlapping density plot of two values
 
-Instructions :
+# Instructions :
 Create a dataframe called 'graduate' which is a subset of 'data' dataframe with the condition "data['Education'] == 'Graduate'"
 
 Create a dataframe called 'not_graduate' which is a subset of 'data' dataframe with the condition "data['Education'] == 'Not Graduate'"
@@ -120,12 +123,13 @@ Things to ponder upon
 * The condition`np.all(graduate['Education']=='Graduate'` should be satisfied that is all the values in the column `Eductaion` of the DataFrame should be `Graduate`
 
 * The condition`np.all(not_graduate['Education']=='Graduate'` should be satisfied that is all the values in the column `Eductaion` of the DataFrame should be `Not Graduate`
-Step 5
+
+# Step 5
 
 Income vs Loan
 For any financial institution to be successful in its loan lending system, there has to be a correlation between the borrower's income and loan amount he is lent. Let's see how our company fares in that respect:
 
-Instructions :
+# Instructions :
 Create three subplots with (nrows = 3 , ncols = 1) and store it in variable's fig ,(ax_1,ax_2,ax_3)
 
 Since both are continuous variables, plot scatter plot between 'ApplicantIncome' and LoanAmount using ax_1. Set axis title as Applicant Income
@@ -143,3 +147,5 @@ Things to ponder upon
 Test Case:
 
 The condition data['TotalIncome'][1] == 6091 should be satisfied.
+
+--------------------------------------------------------------
